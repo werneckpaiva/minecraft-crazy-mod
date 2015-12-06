@@ -1,5 +1,6 @@
 package papai.sinistrao;
 
+import Itens.GerenciadorDeItens;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
@@ -38,6 +39,12 @@ public class PapaiSinistraoMod
     {
         System.out.println("Papai Sinistrão - PostInit");
     }
+    
+	@EventHandler  
+	public void preLoad(FMLPreInitializationEvent event) {
+	   GerenciadorDeBlocos.init();
+	   GerenciadorDeItens.init();
+//	   CommonProxy.RegisterRender();S
+	  
+	}
 }
-
-

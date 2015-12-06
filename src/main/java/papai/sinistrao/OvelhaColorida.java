@@ -6,6 +6,7 @@ import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.event.ClickEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.event.entity.player.EntityInteractEvent;
+import net.minecraftforge.event.world.BlockEvent.BreakEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 public class OvelhaColorida {
@@ -31,6 +32,13 @@ public class OvelhaColorida {
                 EntityCow cow = (EntityCow) entity;
                 cow.setFire(5);
             }
+        }
+    }
+    
+    @SubscribeEvent
+    public void entityClickHandler2(BreakEvent event){
+        if (!event.world.isRemote){
+            event.block.setLightOpacity(400);
         }
     }
 
