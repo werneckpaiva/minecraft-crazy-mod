@@ -1,5 +1,7 @@
 package papai.sinistrao;
 
+import papai.sinistrao.blocs.GerenciadorDeBlocos;
+import papai.sinistrao.itens.GerenciadorDeItens;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -14,7 +16,7 @@ public class CrazyMod extends CreativeTabs {
 	@Override
 	public Item getTabIconItem() {
 		// TODO Auto-generated method stub
-		return Item.getItemFromBlock(Blocks.anvil);
+		return GerenciadorDeItens.itemPepitaDeGrama;
 	}
 
 }

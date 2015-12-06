@@ -38,7 +38,7 @@ public class OvelhaColorida {
     @SubscribeEvent
     public void entityClickHandler2(BreakEvent event){
         if (!event.world.isRemote){
-            event.block.setLightOpacity(400);
+            event.block.setResistance(20);
         }
     }
 

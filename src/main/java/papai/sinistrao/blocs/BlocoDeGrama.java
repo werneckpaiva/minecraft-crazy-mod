@@ -14,7 +14,7 @@ public class BlocoDeGrama extends Block {
 		this.setHardness(20);
 		this.setCreativeTab(CreativeTabs.tabBlock);
 		this.setBlockName("BlocoDeGrama");
-		this.setBlockTextureName("BlocoDeGrama");
+		this.setBlockTextureName(PapaiSinistraoMod.MODID + ":" + "BlocoDePeido");
 	}
 
 }
