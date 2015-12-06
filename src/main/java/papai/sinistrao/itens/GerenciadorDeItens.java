@@ -20,4 +20,13 @@ public class GerenciadorDeItens
 	       itemPepitaDeDiamante = new ItemPepitaDeDiamante();
 	       GameRegistry.registerItem(itemPepitaDeDiamante, "ItemPepitaDeDiamanteX");
 	   }
-}	  
+	
+	
+	 public static Item peidinho;
+	public static void init5()
+		   {
+			   System.out.println("GERENCIADOR DE ITENS");
+			   peidinho = new Peidinho();
+		       GameRegistry.registerItem(peidinho, "peidinhoX");
+		   }
+	}	  

@@ -40,6 +40,8 @@ public class PapaiSinistraoMod
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+       GerenciadorDeItens.init5();
+       GerenciadorDeBlocos.init3();
  	   GerenciadorDeBlocos.init();
  	   GerenciadorDeItens.init();
  	   GerenciadorDeItens.init2();

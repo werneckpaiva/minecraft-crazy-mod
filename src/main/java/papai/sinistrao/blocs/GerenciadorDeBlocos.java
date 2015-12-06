@@ -13,4 +13,11 @@ public class GerenciadorDeBlocos
 		BlocoDeGrama = new BlocoDeGrama(Material.wood);
 		GameRegistry.registerBlock(BlocoDeGrama, "BlocoDeGrama");
 	}
+	public static Block Xixi;
+	public static void init3()
+	{
+		System.out.println("GERENCIADOR DE BLOCOS");
+		Xixi = new Xixi(Material.wood);
+		GameRegistry.registerBlock(Xixi, "X");
+	}
 }
