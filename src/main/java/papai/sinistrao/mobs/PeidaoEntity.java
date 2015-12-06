@@ -4,13 +4,14 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;
 
-public class PeidaoEntity extends EntityCow {
+public class PeidaoEntity extends EntityZombie {
 
     public static final int ENTITY_ID = EntityRegistry.findGlobalUniqueEntityId();
 
@@ -25,9 +26,9 @@ public class PeidaoEntity extends EntityCow {
         EntityRegistry.addSpawn(PeidaoEntity.class, 5, 1, 2, EnumCreatureType.creature, BiomeGenBase.extremeHills);
     }
 
-    @Override
-    public PeidaoEntity createChild(EntityAgeable entityAgeable) {
-        return new PeidaoEntity(this.worldObj);
-    }
+//    @Override
+//    public PeidaoEntity createChild(EntityAgeable entityAgeable) {
+//        return new PeidaoEntity(this.worldObj);
+//    }
 
 }

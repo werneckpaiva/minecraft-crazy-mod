@@ -12,8 +12,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class PeidaoRendering extends RenderLiving{
 
-//    private static final ResourceLocation peidaoTexture = new ResourceLocation(PapaiSinistraoMod.MODID+ ":" +"ItemPepitaDeGrama");  //refers to:assets/yourmod/textures/entity/yourtexture.png
-    private static final ResourceLocation cowTextures = new ResourceLocation("textures/entity/cow/cow.png");
+    private static final ResourceLocation peidaoTexture = new ResourceLocation(PapaiSinistraoMod.MODID+ ":textures/entity/peidao.png");  //refers to:assets/yourmod/textures/entity/yourtexture.png
+//    private static final ResourceLocation cowTextures = new ResourceLocation("textures/entity/cow/cow.png");
 
     public PeidaoRendering(ModelBase mainModel, float shadowSize) {
         super(mainModel, shadowSize);
@@ -21,7 +21,7 @@ public class PeidaoRendering extends RenderLiving{
 
     @Override
     protected ResourceLocation getEntityTexture(Entity entity) {
-        return cowTextures;
+        return peidaoTexture;
     }
 
 }
