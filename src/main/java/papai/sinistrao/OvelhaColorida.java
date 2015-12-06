@@ -28,6 +28,7 @@ public class OvelhaColorida {
             if (entity instanceof EntitySheep){
                 EntitySheep sheep = (EntitySheep) entity;
                 sheep.setFleeceColor(sheep.getFleeceColor() + 1);
+                System.out.println("Cor da ovelha: "+sheep.getFleeceColor());
             } else if (entity instanceof EntityCow){
                 EntityCow cow = (EntityCow) entity;
                 cow.setFire(5);

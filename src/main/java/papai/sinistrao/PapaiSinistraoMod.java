@@ -1,26 +1,25 @@
 package papai.sinistrao;
 
-import com.google.common.base.Strings;
-
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
 import papai.sinistrao.blocs.GerenciadorDeBlocos;
 import papai.sinistrao.itens.GerenciadorDeItens;
+import papai.sinistrao.mobs.PeidaoEntity;
 import papai.sinistrao.recipes.Receitasbasicas;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.EntityRegistry;
 
 @Mod(modid = PapaiSinistraoMod.MODID, version = PapaiSinistraoMod.VERSION, name = PapaiSinistraoMod.NAME)
-public class PapaiSinistraoMod
-{
+public class PapaiSinistraoMod {
+
     public static final String MODID = "papaisinistraomod";
-    public static final String VERSION = "2.0 E NÃO SE FALA MAIS NISSO";
+    public static final String VERSION = "2.0";
     public static final String NAME = "Papai Sinistrao";
 
     @Instance(PapaiSinistraoMod.MODID)
@@ -35,6 +34,7 @@ public class PapaiSinistraoMod
     {
         System.out.println("Papai Sinistrao - Init");
         MinecraftForge.EVENT_BUS.register(new OvelhaColorida());
+        PeidaoEntity.init();
     }
     
     @EventHandler
