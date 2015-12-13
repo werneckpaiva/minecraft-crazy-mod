@@ -1,3 +1,4 @@
+package papai.sinistrao.mobs;
 //package papai.sinistrao;
 //
 //import javax.annotation.Generated;

@@ -1,7 +1,7 @@
 package papai.sinistrao.itens;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import papai.sinistrao.CrazyMod;
+import papai.sinistrao.CrazyTab;
 import papai.sinistrao.PapaiSinistraoMod;
 import scala.reflect.internal.Trees.This;
 import net.minecraft.creativetab.CreativeTabs;

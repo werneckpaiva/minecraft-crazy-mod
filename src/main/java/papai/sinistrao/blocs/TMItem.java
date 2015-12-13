@@ -1,7 +1,7 @@
 package papai.sinistrao.blocs;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import papai.sinistrao.CrazyMod;
+import papai.sinistrao.CrazyTab;
 import papai.sinistrao.PapaiSinistraoMod;
 import papai.sinistrao.itens.PeidoAxe;
 import papai.sinistrao.itens.PeidoHoe;

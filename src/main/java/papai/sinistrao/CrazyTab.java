@@ -6,16 +6,14 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 
-public class CrazyMod extends CreativeTabs {
+public class CrazyTab extends CreativeTabs {
 
-	public CrazyMod(int p_i1853_1_, String p_i1853_2_) {
-		super(p_i1853_1_, p_i1853_2_);
-		// TODO Auto-generated constructor stub
+	public CrazyTab(int position, String label) {
+		super(position, label);
 	}
 
 	@Override
 	public Item getTabIconItem() {
-		// TODO Auto-generated method stub
 		return GerenciadorDeItens.itemPepitaDeGrama;
 	}
 

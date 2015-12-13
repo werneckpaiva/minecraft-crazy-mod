@@ -45,7 +45,7 @@ public class PapaiSinistraoMod {
        TMItem.mainRegistry();
        TMItem.registerItem();
        TMItem.initialiseItem();
-       GerenciadorDeItens.initall();
+       GerenciadorDeItens.initAll();
        GerenciadorDeBlocos.initAll();
  	   Client.registerRender();
  	   Receitasbasicas.init();
@@ -59,6 +59,6 @@ public class PapaiSinistraoMod {
     }
     
     
-    public static CreativeTabs tab = new CrazyMod(CreativeTabs.getNextID(), PapaiSinistraoMod.MODID); 
+    public static CreativeTabs tab = new CrazyTab(CreativeTabs.getNextID(), PapaiSinistraoMod.MODID); 
     
 }
