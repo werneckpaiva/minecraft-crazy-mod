@@ -5,6 +5,13 @@ import net.minecraft.item.Item;
 
 public class GerenciadorDeItens
 {		
+	public static void initall() {
+  init(); 
+  init2();
+  init5();
+  init1();
+  init50();}
+	
    public static Item itemPepitaDeGrama;
    public static void init()   
    {
@@ -29,4 +36,17 @@ public class GerenciadorDeItens
 			   peidinho = new Peidinho();
 		       GameRegistry.registerItem(peidinho, "peidinhoX");
 		   }
-	}	  
+	 public static Item ZangardItem;
+		public static void init1()
+			   {
+			 ZangardItem = new ZangardItem();
+		       GameRegistry.registerItem( ZangardItem, " ZangardItemX");
+		   }
+		 public static Item Rerved2;
+			public static void init50()
+				   {
+				Rerved2 = new Rerved2();
+			       GameRegistry.registerItem( Rerved2, " Rerved2");
+			   }
+			   }
+	

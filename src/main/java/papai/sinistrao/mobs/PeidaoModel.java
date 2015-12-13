@@ -13,7 +13,6 @@ public class PeidaoModel extends ModelZombie {
     public PeidaoModel() {
         super();
     }
-    
     public PeidaoModel(float x, boolean flag)
     {
         super(x, flag);

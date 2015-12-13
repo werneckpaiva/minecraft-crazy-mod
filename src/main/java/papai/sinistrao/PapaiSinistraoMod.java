@@ -3,9 +3,11 @@ package papai.sinistrao;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import papai.sinistrao.blocs.GerenciadorDeBlocos;
+import papai.sinistrao.blocs.TMItem;
 import papai.sinistrao.itens.GerenciadorDeItens;
 import papai.sinistrao.mobs.PeidaoEntity;
 import papai.sinistrao.recipes.Receitasbasicas;
+//import papai.sinistrao.recipes.TmEntity;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -40,13 +42,14 @@ public class PapaiSinistraoMod {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-       GerenciadorDeItens.init5();
-       GerenciadorDeBlocos.init3();
- 	   GerenciadorDeBlocos.init();
- 	   GerenciadorDeItens.init();
- 	   GerenciadorDeItens.init2();
+       TMItem.mainRegistry();
+       TMItem.registerItem();
+       TMItem.initialiseItem();
+       GerenciadorDeItens.initall();
+       GerenciadorDeBlocos.initAll();
  	   Client.registerRender();
  	   Receitasbasicas.init();
+ 	 //  TmEntity.mainRegistry();
     }
     
     @EventHandler

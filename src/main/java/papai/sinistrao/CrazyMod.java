@@ -20,3 +20,4 @@ public class CrazyMod extends CreativeTabs {
 	}
 
 }
+

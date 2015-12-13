@@ -19,12 +19,14 @@ public class Receitasbasicas
 	    ItemStack stack1 = new ItemStack(GerenciadorDeItens.itemPepitaDeGrama, 9);
 	    ItemStack stack2 = new ItemStack(Blocks.dirt, 1);
 	    ItemStack stack3 = new ItemStack(GerenciadorDeItens.itemPepitaDeDiamante);
-	    ItemStack stack4 = new ItemStack(Items.diamond);
+	    ItemStack stack4 = new ItemStack(Items.diamond,1);
+	    ItemStack stack5 = new ItemStack(GerenciadorDeItens.itemPepitaDeDiamante,9);
 	   //ComForma
 	   GameRegistry.addShapedRecipe(stack2, "ppp", "ppp","ppp",'p', GerenciadorDeItens.itemPepitaDeGrama );
 	   GameRegistry.addShapedRecipe(stack4, "ppp", "ppp","ppp",'p', GerenciadorDeItens.itemPepitaDeDiamante );
 	   //SemForma
 	   GameRegistry.addShapelessRecipe(stack1, Blocks.dirt);
+	   GameRegistry.addShapelessRecipe(stack5, Items.diamond);
 	   //Fornalha
 	   GameRegistry.addSmelting(GerenciadorDeItens.itemPepitaDeGrama,stack3, 5);
 	   
