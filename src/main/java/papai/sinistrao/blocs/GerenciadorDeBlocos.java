@@ -6,37 +6,42 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 
-public class GerenciadorDeBlocos
-{
-	public static void initAll()   {
-	init();
-	init3();
-	init4();
-	init8();}
+public class GerenciadorDeBlocos {
+
+	public static void initAll() {
+		initBlocoDeGrama();
+//		initXixi();
+		initZangard();
+		initReved();
+	}
+
 	public static Block BlocoDeGrama;
-	public static void init()
-	{
+
+	public static void initBlocoDeGrama() {
 		System.out.println("GERENCIADOR DE BLOCOS");
 		BlocoDeGrama = new BlocoDeGrama(Material.wood);
 		GameRegistry.registerBlock(BlocoDeGrama, "BlocoDeGrama");
 	}
+
 	public static Block Xixi;
-	public static void init3()
-	{
+
+	public static void initXixi() {
 		System.out.println("GERENCIADOR DE BLOCOS");
 		Xixi = new Xixi(Material.wood);
 		GameRegistry.registerBlock(Xixi, "Xixi");
 	}
+
 	public static Block Zangard;
-	public static void init4()
-	{
+
+	public static void initZangard() {
 		Zangard = new Zangard(true);
-		GameRegistry.registerBlock(Zangard, "Zangard");	
+		GameRegistry.registerBlock(Zangard, "Zangard");
+	}
+
+	public static Block Rerved;
+
+	public static void initReved() {
+		Rerved = new Rerved(true);
+		GameRegistry.registerBlock(Rerved, "Rerved");
+	}
 }
-	
-   public static Block Rerved;
-   public static void init8()
-{
-	   Rerved = new Rerved(true);
-	GameRegistry.registerBlock(Rerved, "Rerved");
-}}

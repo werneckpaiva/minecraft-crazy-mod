@@ -5,6 +5,7 @@ import net.minecraftforge.common.MinecraftForge;
 import papai.sinistrao.blocs.GerenciadorDeBlocos;
 import papai.sinistrao.blocs.TMItem;
 import papai.sinistrao.itens.GerenciadorDeItens;
+import papai.sinistrao.mobs.MulaSemCabecaEntity;
 import papai.sinistrao.mobs.PeidaoEntity;
 import papai.sinistrao.recipes.Receitasbasicas;
 //import papai.sinistrao.recipes.TmEntity;
@@ -37,6 +38,7 @@ public class PapaiSinistraoMod {
         System.out.println("Papai Sinistrao - Init");
         MinecraftForge.EVENT_BUS.register(new OvelhaColorida());
         PeidaoEntity.init();
+        MulaSemCabecaEntity.init();
     }
     
     @EventHandler

@@ -53,26 +53,25 @@ public class TMItem {
 		tutHoe = new TutHoe(tutMaterial).setUnlocalizedName("TutHoe").setCreativeTab(CreativeTabs.tabTools).setTextureName(PapaiSinistraoMod.MODID + ":TutHoe");
 		tutSpade = new TutSpade(tutMaterial).setUnlocalizedName("TutSpade").setCreativeTab(CreativeTabs.tabTools).setTextureName(PapaiSinistraoMod.MODID + ":TutSpade");
 	
-	peidoPickaxe = new PeidoPickaxe(peidoMaterial).setUnlocalizedName("PeidoPickaxe").setCreativeTab(CreativeTabs.tabTools).setTextureName(PapaiSinistraoMod.MODID + ":PeidoPickaxe");
-	peidoAxe = new PeidoAxe(peidoMaterial2).setUnlocalizedName("PeidoAxe").setCreativeTab(CreativeTabs.tabTools).setTextureName(PapaiSinistraoMod.MODID + ":PeidoAxe");
-	peidoSword = new PeidoSword(peidoMaterial).setUnlocalizedName("PeidoSword").setCreativeTab(CreativeTabs.tabCombat).setTextureName(PapaiSinistraoMod.MODID + ":PeidoSword");
-	peidoHoe = new PeidoHoe(peidoMaterial).setUnlocalizedName("PeidoHoe").setCreativeTab(CreativeTabs.tabTools).setTextureName(PapaiSinistraoMod.MODID + ":PeidoHoe");
-	peidoSpade = new PeidoSpade(peidoMaterial2).setUnlocalizedName("PeidoSpade").setCreativeTab(CreativeTabs.tabTools).setTextureName(PapaiSinistraoMod.MODID + ":PeidoSpade");}
+    	peidoPickaxe = new PeidoPickaxe(peidoMaterial).setUnlocalizedName("PeidoPickaxe").setCreativeTab(CreativeTabs.tabTools).setTextureName(PapaiSinistraoMod.MODID + ":PeidoPickaxe");
+    	peidoAxe = new PeidoAxe(peidoMaterial2).setUnlocalizedName("PeidoAxe").setCreativeTab(CreativeTabs.tabTools).setTextureName(PapaiSinistraoMod.MODID + ":PeidoAxe");
+    	peidoSword = new PeidoSword(peidoMaterial).setUnlocalizedName("PeidoSword").setCreativeTab(CreativeTabs.tabCombat).setTextureName(PapaiSinistraoMod.MODID + ":PeidoSword");
+    	peidoHoe = new PeidoHoe(peidoMaterial).setUnlocalizedName("PeidoHoe").setCreativeTab(CreativeTabs.tabTools).setTextureName(PapaiSinistraoMod.MODID + ":PeidoHoe");
+    	peidoSpade = new PeidoSpade(peidoMaterial2).setUnlocalizedName("PeidoSpade").setCreativeTab(CreativeTabs.tabTools).setTextureName(PapaiSinistraoMod.MODID + ":PeidoSpade");
+    }
 	
 	public static void registerItem() {
-	
-			GameRegistry.registerItem(tutPickaxe, tutPickaxe.getUnlocalizedName());
-			GameRegistry.registerItem(tutAxe, tutAxe.getUnlocalizedName());
-			GameRegistry.registerItem(tutSword, tutSword.getUnlocalizedName());
-			GameRegistry.registerItem(tutHoe, tutHoe.getUnlocalizedName());
-			GameRegistry.registerItem(tutSpade, tutSpade.getUnlocalizedName());
+		GameRegistry.registerItem(tutPickaxe, tutPickaxe.getUnlocalizedName());
+		GameRegistry.registerItem(tutAxe, tutAxe.getUnlocalizedName());
+		GameRegistry.registerItem(tutSword, tutSword.getUnlocalizedName());
+		GameRegistry.registerItem(tutHoe, tutHoe.getUnlocalizedName());
+		GameRegistry.registerItem(tutSpade, tutSpade.getUnlocalizedName());
 
-			GameRegistry.registerItem(peidoPickaxe, peidoPickaxe.getUnlocalizedName());
-			GameRegistry.registerItem(peidoAxe, peidoAxe.getUnlocalizedName());
-			GameRegistry.registerItem(peidoSword, peidoSword.getUnlocalizedName());
-			GameRegistry.registerItem(peidoHoe, peidoHoe.getUnlocalizedName());
-			GameRegistry.registerItem(peidoSpade, peidoSpade.getUnlocalizedName());
-
+		GameRegistry.registerItem(peidoPickaxe, peidoPickaxe.getUnlocalizedName());
+		GameRegistry.registerItem(peidoAxe, peidoAxe.getUnlocalizedName());
+		GameRegistry.registerItem(peidoSword, peidoSword.getUnlocalizedName());
+		GameRegistry.registerItem(peidoHoe, peidoHoe.getUnlocalizedName());
+		GameRegistry.registerItem(peidoSpade, peidoSpade.getUnlocalizedName());
 	}
 	
 }
