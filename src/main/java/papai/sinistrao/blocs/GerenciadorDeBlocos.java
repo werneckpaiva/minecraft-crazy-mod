@@ -44,4 +44,10 @@ public class GerenciadorDeBlocos {
 		Rerved = new Rerved(true);
 		GameRegistry.registerBlock(Rerved, "Rerved");
 	}
+//	public static Block xX;
+//
+//	public static void initxX() {
+//		xX = new xX();
+//		GameRegistry.registerBlock(xX, "xX");
+//	}
 }
