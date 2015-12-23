@@ -13,6 +13,7 @@ public class GerenciadorDeBlocos {
 //		initXixi();
 		initZangard();
 		initReved();
+		initTurBlock();
 	}
 
 	public static Block BlocoDeGrama;
@@ -38,16 +39,22 @@ public class GerenciadorDeBlocos {
 		GameRegistry.registerBlock(Zangard, "Zangard");
 	}
 
-	public static Block Rerved;
+	public static Block TurmarinaOre;
 
 	public static void initReved() {
-		Rerved = new Rerved(true);
-		GameRegistry.registerBlock(Rerved, "Rerved");
-	}
+		TurBlock = new TurmarinaOre(true);
+		GameRegistry.registerBlock(TurBlock, "Rerved");
+}
 //	public static Block xX;
 //
 //	public static void initxX() {
-//		xX = new xX();
+//		xX = new xX(Material.wood);
 //		GameRegistry.registerBlock(xX, "xX");
 //	}
+	public static Block TurBlock;
+
+	public static void initTurBlock() {
+		TurBlock = new TurBlock(Material.wood);
+		GameRegistry.registerBlock(TurBlock, "TurBlock");
+	}
 }

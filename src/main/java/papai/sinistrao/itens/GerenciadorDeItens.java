@@ -45,10 +45,10 @@ public class GerenciadorDeItens {
 		GameRegistry.registerItem(ZangardItem, " ZangardItemX");
 	}
 
-	public static Item Rerved2;
+	public static Item Turmarina;
 
 	public static void initReverd() {
-		Rerved2 = new Rerved2();
-		GameRegistry.registerItem(Rerved2, " Rerved2");
+		Turmarina = new Turmarina();
+		GameRegistry.registerItem(Turmarina, " Cristal");
 	}
 }

@@ -15,11 +15,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Rerved extends Block {
+public class TurmarinaOre extends Block {
 	 private boolean field_150187_a;
 	    private static final String __OBFID = "CL_00000294";
 
-	    public Rerved(boolean p_i45420_1_){
+	    public TurmarinaOre(boolean p_i45420_1_){
 	    
 	    
 	    
@@ -30,7 +30,7 @@ public class Rerved extends Block {
 	            this.setTickRandomly(true);
 	        }
 	        {
-	       	 this.setBlockTextureName(PapaiSinistraoMod.MODID + ":" + "Rerved");
+	       	 this.setBlockTextureName(PapaiSinistraoMod.MODID + ":" + "Turmarina");
 	 		this.setHardness(30);
 
 
@@ -78,9 +78,10 @@ public class Rerved extends Block {
 	    {
 	        this.func_150186_m(p_150185_1_, p_150185_2_, p_150185_3_, p_150185_4_);
 
-	        if (this == GerenciadorDeBlocos.Rerved)
+	        if (this == GerenciadorDeBlocos.TurBlock
+)
 	        {
-	            p_150185_1_.setBlock(p_150185_2_, p_150185_3_, p_150185_4_, GerenciadorDeBlocos.Rerved);
+	            p_150185_1_.setBlock(p_150185_2_, p_150185_3_, p_150185_4_, GerenciadorDeBlocos.TurBlock);
 	        }
 	    }
 
@@ -89,15 +90,15 @@ public class Rerved extends Block {
 	     */
 	    public void updateTick(World p_149674_1_, int p_149674_2_, int p_149674_3_, int p_149674_4_, Random p_149674_5_)
 	    {
-	        if (this == GerenciadorDeBlocos.Rerved)
+	        if (this == GerenciadorDeBlocos.TurBlock)
 	        {
-	            p_149674_1_.setBlock(p_149674_2_, p_149674_3_, p_149674_4_, GerenciadorDeBlocos.Rerved);
+	            p_149674_1_.setBlock(p_149674_2_, p_149674_3_, p_149674_4_, GerenciadorDeBlocos.TurBlock);
 	        }
 	    }
 
 	    public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
 	    {
-	        return GerenciadorDeItens.Rerved2;
+	        return GerenciadorDeItens.Turmarina;
 	    }
 
 	    /**
@@ -201,7 +202,7 @@ public class Rerved extends Block {
 	     */
 	    protected ItemStack createStackedBlock(int p_149644_1_)
 	    {
-	        return new ItemStack(GerenciadorDeBlocos.Rerved);
+	        return new ItemStack(GerenciadorDeBlocos.TurBlock);
 	    }
 	}
 
